@@ -1,14 +1,14 @@
 function Time() {
     // Creating object of the Date class
-    const date = new Date();
+    let date = new Date();
     // Get current hour
-    const hour = date.getHours();
+    let hour = date.getHours();
     // Get current minute
-    const minute = date.getMinutes();
+    let minute = date.getMinutes();
     // Get current second
-    const second = date.getSeconds();
+    let second = date.getSeconds();
     // Variable to store AM / PM
-    const period = "";
+    let period = "";
     // Assigning AM / PM according to the current hour
     if (hour >= 12) {
     period = "PM";
