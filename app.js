@@ -42,9 +42,10 @@ function Time() {
     else {
     return t;
     }
+    console.log(Time())
    }
    Time();
-
+   console.log(Time())
 
 // code from analog clock
 // const secondsHand = document.getElementById('seconds-hand')
