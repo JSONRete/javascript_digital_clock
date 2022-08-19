@@ -1,6 +1,6 @@
 function Time() {
     // Creating object of the Date class
-    let date = new Date();
+    const date = new Date();
     // Get current hour
     let hour = date.getHours();
     // Get current minute
@@ -8,7 +8,7 @@ function Time() {
     // Get current second
     let second = date.getSeconds();
     // Variable to store AM / PM
-    let period = "";
+    const period = "";
     // Assigning AM / PM according to the current hour
     if (hour >= 12) {
     period = "PM";
