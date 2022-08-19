@@ -8,7 +8,7 @@ function Time() {
     // Get current second
     let second = date.getSeconds();
     // Variable to store AM / PM
-    const period = "";
+    let period = "";
     // Assigning AM / PM according to the current hour
     if (hour >= 12) {
     period = "PM";
@@ -32,19 +32,19 @@ function Time() {
     document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
     // Set Timer to 1 sec (1000 ms)
     setTimeout(Time, 1000);
-   }
+}
     // Function to update time elements if they are less than 10
     // Append 0 before time elements if they are less than 10
-   function update(t) {
+function update(t) {
     if (t < 10) {
     return "0" + t;
     }
     else {
     return t;
     }
-   }
-   Time();
-   console.log(Time())
+}
+Time();
+console.log(Time())
 
 // code from analog clock
 // const secondsHand = document.getElementById('seconds-hand')
